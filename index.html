@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My TS Project</title>
+  <link rel="stylesheet" href="style.css"/> 
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <button class="hamburger" ib="hamburger">⇶</button>
+    <h1 claas="logo">sneakers</h1>
+    <nav class="nav-links"
+    id="navLinks">
+    <a href="#">Collections</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  </div>
+  
+  <div class="nav-right">
+    <div class="cart-logo">
+    <div class="cart-icon"
+    id="cartIcon">🛒<span id="cartcount">0</span></div>
+    <img src="/src/assest/image/bg-logo.jpg" alt="user" class="logo">
+    </div>
+</div>
+  </header>
+<div class="sidebar" id="sidebar">
+  <button class="close-btn" id="closeSider">x</button>
+  <a href="#">Collections</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+  <div class="container">
+<div class="product-image">
+<img src="src/assest/image/bg-card 1.jpg" alt="Main product" class="main-img" id="mainImage">
+
+<div class="card">
+<img src="/src/assest/image/bg-card 1.jpg" alt="card 1" class="card active">
+<img src="/src/assest/image/bg-card 2.jpg" alt="card 2" class="card"> 
+<img src="/src/assest/image/bg-card 3.jpg" alt="card 3" class="card">
+<img src="/src/assest/image/bg-card 4.jpg" alt="card 4" class="card">
+</div>
+</div>
+  <div class="product-info">
+<p>SNEAKERS COMPANY</p>
+<h1>Fall Limited Edition<span class="a"><br>Sneakers</span></h1>
+<p>
+  These low-profile sneaker are your perfect casual wear<span class="p" >
+    <br>companion.featruing a durable rubber outer sole,they'll 
+    <br>withstand everything the weather can offer</span>
+</p>
+  <div class="no"><p><strong>$125.00</strong></p></div>
+<div class="smallm"> <small>50%</small></div>
+<div class="span"><p><span style="text-decoration: line-through; color: gray;"><small>$250.00</small></span></p></div>
+  <button class="cart-btn">
+    🛒 Add to Cart
+  </button>
+  <div class="quantity">
+    <button id="decrease">-</button>
+    <span id="count">3</span>
+    <button id="increase">+</button>
+  </div>
+</div>
+
+  <div class="cart-dropdown" id="cartDropdown"><h3>cart</h3>
+  <div id="cartItems"></div>
+  <button id="checkoutBtn"class="checkout-btn">
+  checkout  
+  </button>
+  </div>
+
+  <script src="dist/main.js"></script>
+</body>
+</html>
