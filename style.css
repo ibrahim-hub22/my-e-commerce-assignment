@@ -245,7 +245,7 @@ padding: 7px 12px;
       margin-top: 1rem;
       border-radius: 8px;
     }
-    @media (max-width:375px){
+    @media (max-width:768px){
       .container{
         grid-template-columns: 1fr;}
         .card{
@@ -263,4 +263,5 @@ padding: 7px 12px;
         }
       }
     
+
   
