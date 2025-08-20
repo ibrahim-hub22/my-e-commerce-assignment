@@ -1,0 +1,266 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  padding: 0;
+  width: 1220px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom:1px soild #ddd;
+}
+.nav-left{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-link{
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.cart-icon{
+  cursor: pointer;
+  position: relative;
+}
+#cartcount {
+  position: absolute;
+  background: orange;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.5rem;
+  margin-left: 5px;
+  top: -11%;
+right: -9%;
+}
+.cart-logo{
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  position: absolute;
+  top: 6%;
+  left: 70%;
+}
+.logo{
+  width: 12%;
+  border-radius: 50%;
+  height: 12%;
+}
+.cart-icon,.logo{
+  display: inline-block;
+}
+.huambuger{
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.sidebar{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  padding: 2rem 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  display: block;
+}
+.close-btn{
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom:1rem ;
+}
+.container{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:2rem;
+  max-width: 1100px;
+  margin:2rem auto;
+  padding: 0 1rem;
+  
+}
+.main-img{
+  width:60%;
+  border-radius: 15px;
+}
+.card{
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+  justify-content: center;
+}
+.card img{
+  width: 75px;
+  border-radius:10px ;
+  cursor: pointer;
+  border: 2px soild transparent;
+  transition: 03s;
+}
+.card img.active,
+.card img:hover{
+  border: 2px solid orange;
+  opacity: 0.8;
+}
+.product-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+}
+button {
+padding: 7px 12px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+    .cart-btn {
+      position: absolute;
+      right: 20%;
+      top: 18.5rem;
+      gap: 8px;
+      background: orange;
+      color: black;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cart-btn:hover {
+      background:darkorange;
+    }
+
+    .cart-btn  {
+      font-size: 18px;
+    }
+    .quantity {
+      gap: 8px;
+      background: white;
+padding: 7px 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 100px;
+      position: absolute;
+      top: 18.5rem;
+      
+    }
+.quantity button {
+  grid-column: 4;
+      background:#ddd;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      align-items: center;
+    }
+    .quantity button:hover {
+      background: #ccc;
+    }
+    .span{
+      position: absolute;
+      left: 2%;
+      top: 98%;
+    }
+    .no{
+      position: absolute;
+      left: 2%;
+      top: 90%;
+    }
+    .smallm{
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      width: 7%;
+      padding:2px 4px ;
+      position: absolute;
+      left: 19%;
+      top: 96%;
+    }
+    .quantity span {
+      text-align: center;
+      font-weight: bold;
+    }
+    .cart-dropdown{
+      display: none;
+      position: absolute;
+      right: 20px;
+      top: 70px;
+      width: 300px;
+      background: white;
+      border: 1px soild #ddd;
+      border-radius:10px ;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    .cart-item{
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5rem 0;
+    }
+    .cart-item button{
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: red;
+    }
+    .checkout-btn{
+      width: 100%;
+      padding: 0 8rem;
+      background: orange;
+      color: white;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+    @media (max-width:375px){
+      .container{
+        grid-template-columns: 1fr;}
+        .card{
+           justify-content: center;
+        }
+        .card-img{
+          width: 70px;
+        }
+        .nav-link{
+          display: none;
+          
+        }
+        .container{
+          grid-template-columns: 1fr;
+        }
+      }
+    
+  
